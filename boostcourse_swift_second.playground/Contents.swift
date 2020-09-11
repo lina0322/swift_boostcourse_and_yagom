@@ -93,3 +93,43 @@ print(intersection) // [3, 4, 5]
 let subtracting: Set<Int> = setA.subtracting(setB)
 print(subtracting) // [1, 2]
 
+print("-----------")
+
+func sum(a: Int, b: Int) -> Int { return a + b }
+func printMyName(name: String) -> Void { print(name) }
+func printYourName(name: String) { print(name) } // 반환값 생략가능
+func maxInteger() -> Int { return Int.max }
+func hello() -> Void { print("hello") }
+func bye() { print("hello") }
+
+sum(a: 3, b: 5)
+printMyName(name: "lina")
+printYourName(name: "noname")
+maxInteger()
+hello()
+bye()
+
+func greeting(friend: String, me: String = "lina") {
+    print("hello \(friend)! I'm \(me)")
+}
+greeting(friend: "iOS") // "hello iOS! I'm lina"
+greeting(friend: "iOS", me: "Android") // "hello iOS! I'm Android"
+
+func greeting(to friend: String, from me: String = "lina") {
+    print("hello \(friend)! I'm \(me)")
+}
+greeting(to: "iOS") // "hello iOS! I'm lina"
+/* 전달인자 레이블을 사용하면 동일한 이름의 함수를 중복으로 생성 가능함 */
+
+func sayHelloToFrineds(me: String = "lina", friends: String...) -> String {
+    return "hello \(friends)!, I'm \(me)!"
+}
+print(sayHelloToFrineds(friends: "iOS", "And", "Yeah"))
+// hello ["iOS", "And", "Yeah"]!, I'm lina!
+print(sayHelloToFrineds())
+// hello []!, I'm lina!
+
+/* 반환값이 없는 함수, 매개변수 기본 값, 전달인자 레이블, 가면 매개변수 등 모두 섞어서 사용 가능함 */
+
+
+
