@@ -1,6 +1,9 @@
 # swift_boostcourse&yagom
 🌄 naver boostcourse swift 과정과, yagom dot net의 swift 강의를 정리하였습니다.
 
+https://www.boostcourse.org/mo122 // naver boostcourse swift  
+https://yagom.net/courses/swift-basic // 야곰닷넷 swift  
+
 ### 기초개념
 #### 01. 이름짓기, 콘솔로그, 문자열 보간법
 #### 02. 상수와 변수
